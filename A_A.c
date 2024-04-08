@@ -19,13 +19,6 @@ int main()
     lli n, count = 0;
     scanf("%lld", &n);
 
-    for (int i = 1; i <= n; i++)
-    {
-        count +=i;
-        if(i<n)
-            count--;
-    }
-
-    printf("%lld\n",count);
+    printf("%lld\n",(n*(n+1)/2)-(n-1));
     return 0;
 }
